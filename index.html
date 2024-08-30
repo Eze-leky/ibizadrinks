@@ -68,7 +68,7 @@
           <div class="carousel-caption text-start">
             <h2 class="fuenteCarrusel">Aprende los mejores cocktails</h2>
             <p >Con nuestro curso basico aprenderas todo lo que se necesita para trabajar en una barra</p>
-            <p><a class="btn btn-lg bgBotonRosa text-white" href="#">Leer Más</a></p>
+            
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
           <div class="carousel-caption">
             <h2 class="fuenteCarrusel">Capacitaciones</h2>
             <p >Podras trabajar donde lo desees con nuestro curso</p>
-            <p><a class="btn btn-lg bgBotonRosa text-white" href="#">Leer Más</a></p>
+            
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
           <div class="carousel-caption text-end">
             <h2 class="fuenteCarrusel">Crearas tus propias recetas</h2>
             <p >Desde el primer dia pasas a la barra a practicar</p>
-            <p><a class="btn btn-lg bgBotonRosa text-white" href="#">Leer Más</a></p>
+           
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@
         <div class="borroso">
           <h2 class="fuenteLogo">Curso Basico</h2>
           <p>Aprenderas las tecnicas basicas y todo lo necesario, para desempañarte bien en cualquier barra del mundo</p>
-          <p><a class="btn bgBotonRosa text-white" href="#">View details &raquo;</a></p>
+          <!--<p><a class="btn bgBotonRosa text-white" href="#"> &raquo;</a></p>-->
         </div>
       </div><!-- /.col-lg-4 -->
        
@@ -131,14 +131,13 @@
 
         <h2 class="fuenteLogo">Avanzado</h2>
         <p>Curso deiseñado para bartenders que quieran ir mas alla de los pequños pasos e introducirse a fondo en el mundo del coctel</p>
-        <p><a class="btn bgBotonRosa text-white" href="#">View details &raquo;</a></p>
+        <!--<p><a class="btn bgBotonRosa text-white" href="#"> ver mas &raquo;</a></p>-->
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle cover" width="140" height="140" src="./assets/img/tiki.jpeg" >
         <h2 class="fuenteLogo">Nuestro Bar</h2>
         <p>Tenemos nuestro propio bar, unico y orientado a un tipo de cocteleria en particular. Nos especializamos en cocteleria Exotica tropical.</p>
-        <p><a class="btn bgBotonRosa text-white" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
+        <p><a class="btn bgBotonRosa text-white" href="https://www.instagram.com/tikihouselp?igsh=MWJzbHhlNGFvbjV2Zg==">Saber Más &raquo;</a></p>
     </div><!-- /.row -->
 
 
@@ -202,7 +201,75 @@
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto cover imgVelo"  src="./assets/img/trago6.jpeg" alt="velo y tocado">
       </div>
     </div>
+    <hr class="featurette-divider">
+    <!-- DIAS Y HORARIOS -->
+     <div>
+      <h2>Dias y Horarios disponibles----> SEPTIEMBRE</h2>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Dia de curso</th>
+          <th scope="col">Fecha de Inicio</th>
+          <th scope="col">Horario</th>
+          <th scope="col">Carga</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <th scope="row">2</th>
+          <td>Martes</td>
+          <td>10/09</td>
+          <td>15:00hs a 17:00hs</td>
+          <td>Martes y Jueves</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Martes</td>
+          <td>10/09</td>
+          <td>18:00hs a 20:00hs</td>
+          <td>Martes y Jueves</td>
+        </tr>
+        <tr>
+          <th scope="row">1</th>
+          <td>Sabados (Intensivo)</td>
+          <td>14/09</td>
+          <td>14:00hs a 18:00hs</td>
+          <td>Sabados</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr class="featurette-divider">
+<!-- CONTACTO -->
 
+<div class="container mt-5">
+  <h2>Inscripción</h2>
+  <form action="./php/send_email.php" method="post">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre y Apellido</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre Completo" required>
+    </div>
+    <div class="mb-3">
+      <label for="phone" class="form-label">Telefono- Whatsapp</label>
+      <input type="text" class="form-control" id="phone" name="phone" placeholder="(221)1234567" required>
+    </div>
+    <div class="mb-3">
+      <label for="dob" class="form-label">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="dob" name="dob" placeholder="DD/MM/AAAA" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="message" name="message" rows="4" placeholder="Indicanos al dia y horarios que quieras Inscribirte" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+  
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     
 
     <hr class="featurette-divider">
