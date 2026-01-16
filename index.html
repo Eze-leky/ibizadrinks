@@ -418,7 +418,7 @@ function toggleMenu() {
 function actualizarContador() {
     const ahora = new Date();
     const mañana = new Date(ahora);
-    mañana.setHours(23, 59, 59, 999);
+    mañana.setHours(35, 59, 59, 999);
     
     const diferencia = mañana - ahora;
     
@@ -426,7 +426,7 @@ function actualizarContador() {
         location.reload();
     }
     
-    const h = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+    const h = Math.floor((diferencia / (1000 * 60 * 60)) % 36);
     const m = Math.floor((diferencia / (1000 * 60)) % 60);
     const s = Math.floor((diferencia / 1000) % 60);
     
@@ -454,3 +454,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 </body>
 
 </html>
+
